@@ -6,22 +6,36 @@
     
 </head>
 <body>
+    
     <div class="container" ng-app="myApp" ng-controller="myCtrl" ng-init="show_div=false">
     <div class="row">
         <div class="col-md-12">
+            
             <form>
                 trail page
                 <hr>
                 <input type="text" ng-model="data.name" placeholder="name"></input>
                 <br>
-                {{data.myname}}
+                {{data.name}}
                 <hr>
                 <input type="text" ng-model="data.surname" placeholder="surname"></input>
                 <br>
                 {{data.surname}}
-                <input type="submit" ng-click="adduser()"></input>
+                <hr>
+                <!--<input date-range-picker class="form-control date-picker" type="text" ng-model="datePicker.date" />
+                <hr>-->
+                <input type="submit" ng-click="adduser()" value="add user"></input>
             </form>
-            <input date-range-picker class="form-control date-picker" type="text" ng-model="datePicker.date" />
+            <hr>
+            <ul ng-repeat='user in users' >
+                <li>
+                    {{user.name+"   "}}{{user.surname+" "}} 
+                    <a href="#" ng-click="edit(user)">edit</a>
+                    <a href="#" ng-click="save()">save</a>
+                    <a href="#" ng-click="delete($index)">delete</a>
+                </li>
+            </ul>
+            
         </div>
     </div>
     </div>
