@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "angular app",
+  "main": "index.js",
+  "scripts": {
+    "test": "something"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohitkawale/test.git"
+  },
+  "keywords": [
+    "rohit"
+  ],
+  "author": "rohit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohitkawale/test/issues"
+  },
+  "homepage": "https://github.com/rohitkawale/test#readme"
+}
