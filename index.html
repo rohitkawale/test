@@ -11,28 +11,31 @@
     <div class="row">
         <div class="col-md-12">
             
-            <form>
+            <form class="form">
                 trail page
                 <hr>
-                <input type="text" ng-model="data.name" placeholder="name"></input>
+                <input type="text" class="form-control" ng-model="data.name" placeholder="name"></input>
                 <br>
                 {{data.name}}
                 <hr>
-                <input type="text" ng-model="data.surname" placeholder="surname"></input>
+                <input type="text" class="form-control" ng-model="data.surname" placeholder="surname"></input>
                 <br>
                 {{data.surname}}
                 <hr>
                 <!--<input date-range-picker class="form-control date-picker" type="text" ng-model="datePicker.date" />
                 <hr>-->
-                <input type="submit" ng-click="adduser()" value="add user"></input>
+                <input type="submit" class="btn btn-success" ng-click="adduser()" value="add user"></input>
             </form>
             <hr>
             <ul ng-repeat='user in users' >
                 <li>
                     {{user.name+"   "}}{{user.surname+" "}} 
-                    <a href="#" ng-click="edit(user)">edit</a>
-                    <a href="#" ng-click="save()">save</a>
-                    <a href="#" ng-click="delete($index)">delete</a>
+                    <div style="float:right">
+                        <a href="#" class="btn btn-info" ng-click="edit(user)">edit</a>
+                        <a href="#" class="btn btn-info" ng-click="save()">save</a>
+                        <a href="#" class="btn btn-info" ng-click="delete($index)">delete</a>
+                    </div>
+                    <hr>
                 </li>
             </ul>
             

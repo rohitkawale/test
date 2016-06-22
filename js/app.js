@@ -7,8 +7,8 @@ $scope.users=[{
 	'surname' : "kawale"
 },
 {
-	'name' : "rohit2",
-	'surname' : "kawale2"
+	'name' : "ankitesh",
+	'surname' : "gupta"
 }
 ];
 $scope.datePicker={};
